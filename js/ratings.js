@@ -7,5 +7,17 @@ function collect_ratings() {
     };
 
     let rating = 0;
+
+    const elements = document.querySelectorAll('.rating');
+
+    parseelements.forEach(element => {
+        rating = parseInt(element.id.replace('star', ''));
+    });
+    
 }
+
+/* CREATE FUNCTION 
+const collect_ratings = () => {
+    const ratings = { 'count': 0, 'sum':0, 'average':0};
+}*/ 
 
